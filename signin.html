@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet"/>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+  <title>final project</title>
+</head>
+
+<body>
+  <header class="header">
+    <div><h1>My Note <i class="bi bi-journal"></i></h1></div>
+    <div class="logsignin">
+      <div><a href="login.html">Log In</a></div>
+      <div><a href="signin.html">Sign Up</a></div>
+    </div>
+  </header>
+  <div class="signin">
+    <h3>Fill in your Sign up information</h3>
+    <form class="signin-form" action="index.jsp" method="post">
+        <table>
+            <tr>
+              <td>User name</td>
+              <td><input type="text" name="username" value=""  maxlength='15' placeholder="Up to 15 chars"></td>
+            </tr>
+            <tr>
+              <td>ID</td>
+              <td><input type="text" name="userid" value=""  maxlength='10' placeholder="Up to 10 chars"></td>
+            </tr>
+            <tr>
+              <td>Password</td>
+              <td><input type="password" name="userpw" value=""  maxlength='20' placeholder="Up to 20 chars"></td>
+            </tr>
+            <tr>
+              <td><button type="submit" name="signbutton">Sign up</button></td>
+              <td><button type="reset" name="signbutton">Clear</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
