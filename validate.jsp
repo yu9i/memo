@@ -39,7 +39,7 @@
             }
 
             Class.forName("com.mysql.cj.jdbc.Driver");  // MySQL database connection
-            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/website_info?" + "user=root&password=mysql913");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/website_info?" + "user=root&password=root");
             PreparedStatement pst = conn.prepareStatement("Select userName,password,idusers from users where idusers=? and password=?");
             pst.setString(1, userid);
             pst.setString(2, password);
@@ -80,7 +80,7 @@
             </div>
             <%try{
                 Class.forName("com.mysql.cj.jdbc.Driver");  // MySQL database connection
-                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/website_info?" + "user=root&password=mysql913");
+                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/website_info?" + "user=root&password=root");
                 PreparedStatement pst = conn.prepareStatement("Select * from memo");
                 ResultSet rs = pst.executeQuery();
                 while(rs.next()){

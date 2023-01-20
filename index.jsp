@@ -41,7 +41,7 @@
                 return;
             }
             Class.forName("com.mysql.cj.jdbc.Driver");  // MySQL database connection
-            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/website_info?" + "user=root&password=mysql913");    
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/website_info?" + "user=root&password=root");    
              
             String sql = "insert into users(idusers,password,userName)values(?,?,?)";
             PreparedStatement ps = null;

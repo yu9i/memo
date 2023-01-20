@@ -40,7 +40,7 @@
                 }
 
                 Class.forName("com.mysql.cj.jdbc.Driver");  // MySQL database connection
-                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/website_info?" + "user=root&password=mysql913");
+                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/website_info?" + "user=root&password=root");
                 String sql = "insert into memo(memowho,title,content)values(?,?,?)";
                 PreparedStatement ps = null;
                 ps = conn.prepareStatement(sql);   
